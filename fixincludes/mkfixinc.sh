@@ -19,7 +19,8 @@ case $machine in
     powerpc-*-rtems*   | \
     powerpcle-*-eabisim* | \
     powerpcle-*-eabi* | \
-    *-musl* )
+    *-musl* | \
+    *-elfboot*)
 	#  IF there is no include fixing,
 	#  THEN create a no-op fixer and exit
 	(echo "#! /bin/sh" ; echo "exit 0" ) > ${target}
